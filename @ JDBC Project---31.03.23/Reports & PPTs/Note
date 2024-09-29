@@ -1,0 +1,129 @@
+
+
+JDBC Final Report :-
+
+Cover sheet -1
+Certificate sheet -1
+Certificate -1
+Acknowledgement -1
+Abstract -1
+Table of contents -1
+List of figures -1
+List of tables -1
+Introduction -2
+Problem statement -2
+Requirement analysis - Hardware and Software Requirements -2
+Functional and NonFunctional Requirements -2
+Design -2
+Methodology -2
+Conclusion and future enhancements -2
+
+
+
+% \vspace{2cm}
+% \newline
+% \begin{flushright}
+% \textbf{\large
+% NAVANEETH.N\\
+% 1RN21CS098
+% }
+% \end{flushright}
+% \newpage
+\thispagestyle{plain}
+\tableofcontents
+\vspace{1.5cm}
+
+\listoftables
+\chapter{\Large Abstract} 
+\newpage
+
+\chapter{\Large Introduction}
+\newpage
+
+\chapter{\Large Problem Statement}
+\newpage
+
+\chapter{\Large Requirement Analysis}
+\newpage
+
+\chapter{\Large Functional and Non-Functional Requirements}
+\newpage
+
+\chapter{\Large Design}
+\newpage 
+
+\chapter{\Large Methodology}
+\newpage
+
+\chapter{\Large Conclusion and Future Enhancements}
+\newpage
+
+
+
+Heading- Employee management system using Java JDBC server and MySQL 
+
+
+\\abstract
+the neployee management system is an efficient way to store the meployee details and suggest the better tax regimes to them. This system is builkt using java jdbc server and mysql. The system consistes of four modules:
+* class JDBC connection
+* class employee
+* employee interface
+* class for employee implementation
+
+firstly we have established a class called "DBConnection". This helps to connect to the MYSQL database.
+
+next we have a class called "employee" for specifying all the attributes of the table created in the MySQL database. This also contains the getters and setters whihc are required for retrieving and storing the data into the attributes.
+
+An interface called "EmployeeIntrf" has been used whihc consists of all the unimplemented methods required for various operations such as insertion, deletion, display and many more. 
+
+Another class called "EmployeeImpl" is used to provide the implementations for all the methods declared in the interface previously mentioned. 
+
+The rest of this report will provide a detailed description of the problem
+statement, functional and non-functional requirements, system design, methodology, and implementation details of the Employee Management System.
+
+\\Introduction
+this project employee mangement system deals with handling the meployee details and suggesting them a better tax regime. The system is built using Java, JDBC server and SQL to validate an employee's details. After the introduction of the new tax regime it has been difficult for the employees to choose the tax regime in which they pay minimum amt of tax. This project accepts the employee's salary from the database and the calculates the tax according to both the old and new tax regime and suggests the better tax regime. 
+
+\\Problem Statement
+The new tax regime was intrduced for the finicial year 2020-21. After the introduction to the new tax regime there has been a lot of ambiguity among the tax payers to choose between the old and new tax regimes. there a re different tax slabs for different annual incomes and the percentage of the tax paid in the old and new tax regimes are different. 
+
+even though in the new tax regime there is no tax to be paid until the annual income of Rs.7,50,000, it can be disadvantageous once the slaray rises above Rs7,50,000. And it is also not feasible to change the tax regimes every financial year. 
+Well, coming about the advantages of the new tax regime, they are:- 
+1) Reduced tax rate and reduced complications.
+2) Greater disposable income.
+3) Increased liquidity.
+4) Greater flexibilty in making objectiove based investement portfolio.
+Talking about the disadvantages of the same, they are:-
+1) Non availability of tax deductions.
+2) reduced flexibility for choosing new tax regime for those having business income.
+3) absence of automatic mechanism of inclating savings habit.
+
+Considering all the obove objectives, our project helps in deciding the better tax regime to the tax payer inorder to pay minimal amount of tax which renders being highly beneficial.
+
+\\Design and methodolgy
+our project mainly consistes of five modules:
+* main class
+* class JDBC connection
+* class employee
+* employee interface
+* class for employee implementation
+	Firstly talking about the main class. In this class, initially the menu is displayed which asks the user to insert, delete, display details of all employees, display a particular employee details based on his ID, update the details of an amployee if necessary and lastly to know and update his tax regime. 
+	
+	The class DBConnection mainly helps in connecting to our mysql server and our program thereby creating the connectivity bridge for accessing the database through our source code. 
+	
+	The class Employee consists of a constructor to initialize the attributes mentioned specific to the employees. It also has getters and setters used to access and assign these attributes during the computations. This mainly helps in creating a new employee record.
+	
+	The interface EmployeeIntr is created which specifies all the methods required for the operations to be performed. All the methods are declared and npt given any definition or implementation. So this basically acts as the framework for all the manipulation operations performed on the databses. The implementation of all these methods must and shouble be given in its derived class or implementation class.
+	
+	The implementation class basically contains all the logics which drives this entire project. This requirement is fulfilled by creating a class EmployeeImpl whihc gives the implementation of all the abstract methods declared in the above metioned interface.
+	
+	
+\\Conclusion
+The employee management system was developed using an iterative and incremental software develoment methodolgy. The develeopemnt process was divided into multiple phase including requirements gathering an employee, design, implementation and testing. 
+During the requirements gathering phase, the development team worked closely with the employees to identify and prioritize the functional and non functional requirements for the system. The team also conducted a feasibility study to ensure that the project was technically and financially viable.
+In the design phase, the development team created a high-level architecture and design for the system. This included defining the database schema, designing the user interface, and creating a workflow diagram and data flow diagram.
+During the implementation phase, the team wrote the code for the system using Java and JDBC for database connectivity. The team followed object-oriented programming principles and best practices for code maintainability and extensibility. The code for the system included CRUD (Create, Read, Update, Delete) operations for cemployee details, and used PreparedStatement class
+to execute SQL statements and bind the parameters to prevent SQL injectionattacks.
+In the testing phase, the development team conducted unit testing, integration testing, and system testing to ensure that the system met the functional and non-functional requirements. The team also conducted user acceptance testing to gather feedback from the stakeholders and ensure that the system was user-friendly and easy to use.
+
+Coming to the future enhancements on this project, we further look up to consider each and every forms of deductions indivisually so that it gives an extra edge and more accuracy in choosing a better tax regime to the employee. Few more improvisations such as implementing user authorization which enhances the data security of the employees and adding a frontend application for this project for the better user exeperience are also being looked up. 
